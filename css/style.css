@@ -560,8 +560,8 @@ footer {
 
     .projectgrid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+        grid-template-columns: 1fr 1fr 1fr;                         /* trying to figure out how to then sepearate the big div into their */
+    }                                                               /* smaller div components so text can go alongside image and do alternating */
 
     .dp1-grid-item {
         grid-column-start: 1;
