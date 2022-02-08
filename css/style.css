@@ -181,7 +181,7 @@ nav a:hover {
 
 .about h1{
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.25em;
 }
 
 .courses {
@@ -203,7 +203,7 @@ nav a:hover {
 #main h1 {
     margin-bottom: 15px;
     margin-top: 15px;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 #main h1 a, #main h1 a:visited, #main h1 a:active {
@@ -233,7 +233,7 @@ nav a:hover {
 }
 
 #main h2 {
-    font-size: 1.10em;
+    font-size: 1.05em;
     margin-bottom: 15px;
 }
 
@@ -560,8 +560,8 @@ footer {
 
     .projectgrid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;                         /* trying to figure out how to then sepearate the big div into their */
-    }                                                               /* smaller div components so text can go alongside image and do alternating */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .dp1-grid-item {
         grid-column-start: 1;
@@ -755,7 +755,7 @@ footer {
     }
 
     .gallery img {
-        width: 750px;
+        width: 450px;
         margin-bottom: 25px;
         margin-top: 25px;
     }
