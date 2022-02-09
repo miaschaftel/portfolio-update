@@ -22,7 +22,7 @@ h1, h2 {
 }
 
 p {
-    color: #404040;
+    color: #000;
 }
 
 nav {
@@ -129,6 +129,10 @@ nav a:hover {
 
 .dp1-grid-text, .ghp-grid-text, .dp2-grid-text {
     padding: 25px;
+}
+
+.ghp-grid-text-large {
+    display: none;
 }
   
 .dp1-grid:hover{
@@ -550,52 +554,69 @@ footer {
     /* HOMEPAGE CSS */
 
     #index-main {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 75px;
+        margin-right: 75px;
     }
 
     .gallery img {
-        width: 350px;
+        width: 250px;
     }
 
     .projectgrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
     }
 
     .dp1-grid-item {
         grid-column-start: 1;
         grid-column-end: 2;
-
     }
 
     .dp1-grid-text {
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-column-end: -1;
     }
-
-    .ghp-grid-item {
-        grid-column-start: 1;
-        grid-column-end: 2;
-
+    
+    .ghp-grid-text-large {
+        display: inline;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
     }
 
     .ghp-grid-text {
-        grid-column-start: 3;
-        grid-column-end: -1;
+        display: none;
     }
+
+    .ghp-grid-item {
+        grid-column: 2 / span 1;
+        /* grid-column-end: 2; */
+        grid-row: 2 / span 1;
+
+    }
+
+    
 
     .dp2-grid-item {
         grid-column-start: 1;
         grid-column-end: 2;
+        grid-row: 3 / span 1;
 
     }
 
     .dp2-grid-text {
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-column-end: -1;
     }
 
+    .dp1-grid-item:hover, .dp2-grid-item:hover, .ghp-grid-item:hover {
+        transform: scale(1.03); 
+        transition-duration: .4s;
+        box-shadow: 0px 0px 16px 0px rgba(186,186,186.33);
+        border-radius: 20px;
+
+    }
 
 
     /* ABOUT PAGE CSS */
@@ -754,10 +775,12 @@ footer {
         margin-right: 300px;
     }
 
+    .projectgrid {
+        grid-column-gap: 20px;
+    }
+
     .gallery img {
-        width: 450px;
-        margin-bottom: 25px;
-        margin-top: 25px;
+        width: 350px;
     }
 
 
